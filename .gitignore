@@ -9,4 +9,14 @@ __pycache__/
 history/
 *.log
 *.pdf
+*.docx
 
+# Local automation / agent state
+.agents/
+.claude/
+.codex/
+.cursor/
+
+# Local notes/private exports
+architecture.local.md
+private/

@@ -1,8 +1,10 @@
-# Cleanup Plan
+# План очистки
 
-- [ ] Copy only `src/legal_verify/`, `pyproject.toml`, `uv.lock` if safe, and selected docs.
-- [ ] Exclude `.env`, `.venv`, `history/`, caches, local PDFs, and private notes.
-- [ ] Replace model/API details with current neutral docs where needed.
-- [ ] Add tests or small demo fixtures that contain no real legal client data.
-- [ ] Run secret scan before first GitHub push.
-
+- [x] Перенести только `src/legal_verify/`, `pyproject.toml`, `uv.lock` и публичные docs.
+- [x] Исключить `.env`, `.venv`, `history/`, кэши, локальные PDF и приватные заметки.
+- [x] Создать безопасный `.env.example`.
+- [x] Добавить публичные `AGENTS.md` / `CLAUDE.md`.
+- [x] Переписать README/SECURITY/CLEANUP на русский.
+- [x] Добавить тесты или demo fixtures без реальных юридических вопросов.
+- [x] Запустить tests/syntax check (`3 passed`; `python3 -m py_compile` пройден).
+- [x] Запустить проверку на секреты перед первой публикацией в GitHub.

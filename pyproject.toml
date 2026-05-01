@@ -1,0 +1,29 @@
+[project]
+name = "legal-verify"
+version = "0.1.0"
+description = "CLI-инструмент для юридических вопросов по российскому праву с верификацией цитат НПА"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.75.0",
+    "pydantic>=2.0.0",
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "python-telegram-bot>=21.0.0",
+]
+
+[project.scripts]
+legal-verify = "legal_verify.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/legal_verify"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]

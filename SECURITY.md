@@ -1,4 +1,10 @@
-# Security
+# Безопасность
 
-Do not commit API keys, real legal questions, client materials, local history, or private documents.
+Не коммитить API-ключи, Telegram token, реальные юридические вопросы, клиентские материалы, локальную историю `history/`, PDF-паспорта и приватные документы.
 
+Перед публикацией проверить:
+
+- `.env.example` содержит только placeholder-значения;
+- `history/` не попал в git;
+- в prompts нет клиентских материалов и приватных кейсов;
+- secret scan не находит токены и ключи.
